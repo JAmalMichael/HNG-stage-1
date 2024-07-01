@@ -19,7 +19,16 @@ a {
     color: inherit;
     text-decoration: none;
 }
+/*HEADER*/
 
+.current-time {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    color: var(--white);
+}
+/*MAIN PAGE CSS*/
 main{
     display: flex;
     flex-direction: column;
@@ -30,7 +39,7 @@ main{
 }
 
 
-/*MAIN PAGE CSS*/
+
 .main__image {
     object-fit: contain;
     border-radius: 20%;
