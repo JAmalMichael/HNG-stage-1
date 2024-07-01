@@ -24,8 +24,6 @@ main{
 }
 
 .main__image {
-    width: 300px;
-    height: 300px;
     object-fit: contain;
     border-radius: 20%;
 
@@ -35,4 +33,52 @@ main{
     border: 1px solid #fff;
     padding: 5px;
     margin: 2rem;
+    cursor: pointer;
+}
+
+.goals__list {
+    display: flex;
+    flex: 1;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.goals__header {
+    margin: 0 auto 0 auto;
+    text-align: center;
+    color: #fff;
+}
+.goals__list1, 
+.goals__list2 {
+    background: #664a22;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    padding: 2rem;
+}
+
+ul > li {
+    color: #fff;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+.goals__list1:hover, 
+.goals__list2:hover {
+    background-color: #362821;
+    border-top: 0.5px solid #dce6df;
+}
+
+.goals__list-header {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+footer {
+    height: 4rem;
+    background-color: #000;
 }
