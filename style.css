@@ -28,6 +28,15 @@ a {
     text-align: center;
     color: var(--white);
 }
+
+
+@media  (max-width: 768px) {
+    /* For mobile phones: */
+   .current-time {
+    font-size: 14px;
+   }
+  }
+
 /*MAIN PAGE CSS*/
 main{
     display: flex;
@@ -52,6 +61,19 @@ main{
     margin: 2rem;
     cursor: pointer;
 }
+
+@media  (max-width: 768px) {
+    /* For mobile phones: */
+    main{
+        font-size: small;
+    }
+
+    .main__image{
+    display: none;
+   }
+
+
+  }
 
 /*SECTION GOALS CSS*/
 
@@ -78,6 +100,8 @@ main{
     padding: 2rem;
 }
 
+
+
 ul > li {
     color: var(--white);
 }
@@ -96,6 +120,26 @@ li {
     color: var(--white);
     margin-bottom: 5px;
 }
+
+@media  (max-width: 768px) {
+    /* For mobile phones: */
+    .goals__list {
+        flex-direction: column;
+    }
+    
+    .goals__list1, 
+    .goals__list2 {
+        width: 210px;
+        height: 210px;
+        padding: 0.5rem;
+        font-size: small;
+    }
+
+    li {
+        margin-bottom: 0.8rem;
+    }
+
+  }
 
 /*FOOTER*/
 small{
@@ -117,3 +161,29 @@ footer {
 .footer__image > a {
     margin-right: 2rem;
 }
+
+@media  (max-width: 768px) {
+    /* For mobile phones: */
+    footer {
+        font-size: smaller;
+        padding: 5px;
+        justify-content: space-between;
+    }
+    .footer__image {
+        display: flex;
+        flex-direction: row;
+
+    }
+    .footer__image-text {
+    display: none;
+   }
+   f.footer__image-logo {
+    width: 5px;
+    height: 5px;
+   }
+
+   .footer__image > a {
+    margin-right: 0.5rem;
+}
+
+  }
